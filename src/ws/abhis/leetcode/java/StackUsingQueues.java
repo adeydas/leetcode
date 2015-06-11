@@ -17,6 +17,13 @@ public class StackUsingQueues extends TestCase {
     private Queue<Integer> queue1 = new LinkedList<>();
     private Queue<Integer> queue2 = new LinkedList<>();
 
+    /**
+     * Push to queue 2 and then put all elements in queue 1 on top of queue 2. then swap queue 1 and queue 2. so,
+     * push(1) would put 1 in queue2, then it is swapped so queue 1 would have 1 and queue2 would be empty
+     * push(2) would put 2 in queue2, and 1 on top of 2. so top() would return 2 like a stack and so on.
+     * @param x
+     */
+
     // Push element x onto stack.
     public void push(int x) {
         queue2.add(x);
